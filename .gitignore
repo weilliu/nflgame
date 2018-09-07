@@ -12,3 +12,4 @@ tags
 TAGS
 *.egg-info
 ve
+nflgame/gamecenter-json/*
