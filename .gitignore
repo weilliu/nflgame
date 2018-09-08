@@ -13,3 +13,4 @@ TAGS
 *.egg-info
 ve
 nflgame/gamecenter-json/*
+nflgame/*.pyc

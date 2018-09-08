@@ -173,10 +173,15 @@ def meta_from_soup_row(team, soup_row):
     profile_url = 'http://www.nfl.com%s' % tds[1].a['href']
 
     name = tds[1].a.get_text().strip()
-    if ',' not in name:
-        last_name, first_name = name, ''
+    #print(name)
+    if name == 'Leno, Charles, Jr.':
+        first_name = 'Charles'
+        last_name = 'Leno'
     else:
-        last_name, first_name = map(lambda s: s.strip(), name.split(','))
+        if ',' not in name:
+            last_name, first_name = name, ''
+        else:
+            last_name, first_name = map(lambda s: s.strip(), name.split(','))
 
     return {
         'team': team,
