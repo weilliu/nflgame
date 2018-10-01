@@ -66,9 +66,9 @@ How often to check what the current week is. By default, it is twice a day.
 """
 
 #ss.xml is not updated with 2017 data at the moment
-#_CUR_SCHEDULE = "http://www.nfl.com/liveupdate/scorestrip/ss.xml"
+_CUR_SCHEDULE = "http://www.nfl.com/liveupdate/scorestrip/ss.xml"
 #this URL has to be updated weekly every Tues
-_CUR_SCHEDULE = "http://www.nfl.com/ajax/scorestrip?season=2018&seasonType=REG&week=1"
+#_CUR_SCHEDULE = "http://www.nfl.com/ajax/scorestrip?season=2018&seasonType=REG&week=1"
 # """
 # Pinged infrequently to discover the current week number, year and week type.
 # The actual schedule of games is taken from the schedule module.
